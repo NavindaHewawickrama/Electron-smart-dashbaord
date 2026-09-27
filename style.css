@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    user-select: none;
+    -webkit-app-region: drag;
+    overflow: hidden;
+    background: transparent;
+}
+
+.app {
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+    overflow: hidden;
+    background: url("assets/large-bg.png");
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+#calendar {
+    width: 80%;
+    height: 70%;
+    background: white;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid #99b2ef;
+    text-align: center;
+}
+
+#day {
+    padding-bottom: 0.5rem;
+    padding-top: 1rem;
+    color: #99b2ef;
+    text-align: center;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 7.5rem;
+    font-style: normal;
+    line-height: 1.25rem;
+    letter-spacing: 0.45rem;
+    margin-top: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#month {
+    margin-top: 3rem;
+    color: #99b2ef;
+    text-align: center;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    line-height: 1.5rem;
+    letter-spacing: 0.45rem;
+}
+
+button,
+input,
+textarea,
+select {
+    -webkit-app-region: no-drag;
+    cursor: pointer;
+}
